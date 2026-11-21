@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Emporio | Ferretería</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__top">
+      <ul class="header__info">
+        <li class="header__info-item">WhatsApp: +591 7000 0000</li>
+        <li class="header__info-item">Lunes a viernes 8:30 a 17:00</li>
+      </ul>
+      <div class="header__tools">
+        <button class="header__theme" type="button" id="themeToggle">Modo oscuro</button>
+        <a href="#" class="header__store">TIENDA EN LÍNEA</a>
+      </div>
+    </div>
+
+    <div class="header__main">
+      <a href="#" class="header__logo">
+        <span class="header__logo-mark">E</span>
+        <span class="header__logo-text">
+          <strong class="header__logo-title">Emporio</strong>
+          <small class="header__logo-subtitle">Ferretería</small>
+        </span>
+      </a>
+
+      <nav class="header__menu">
+        <div class="header__item">
+          <a href="#" class="header__link">Nosotros</a>
+          <ul class="header__dropdown">
+            <li><a href="#" class="header__dropdown-link">Quiénes somos</a></li>
+            <li><a href="#" class="header__dropdown-link">Noticias</a></li>
+            <li><a href="#" class="header__dropdown-link">Trabaja con nosotros</a></li>
+          </ul>
+        </div>
+        <div class="header__item">
+          <a href="#" class="header__link">Productos</a>
+          <ul class="header__dropdown">
+            <li><a href="#" class="header__dropdown-link">Agua fría</a></li>
+            <li><a href="#" class="header__dropdown-link">Agua caliente</a></li>
+            <li><a href="#" class="header__dropdown-link">Desagüe</a></li>
+            <li><a href="#" class="header__dropdown-link">Accesorios</a></li>
+            <li><a href="#" class="header__dropdown-link">Eléctrica</a></li>
+          </ul>
+        </div>
+        <div class="header__item">
+          <a href="#" class="header__link">Información técnica</a>
+          <ul class="header__dropdown">
+            <li><a href="#" class="header__dropdown-link">Catálogos</a></li>
+            <li><a href="#" class="header__dropdown-link">Capacitación</a></li>
+            <li><a href="#" class="header__dropdown-link">Asistencia técnica</a></li>
+          </ul>
+        </div>
+        <div class="header__item">
+          <a href="#" class="header__link">Vender</a>
+          <ul class="header__dropdown">
+            <li><a href="#" class="header__dropdown-link">Publicar producto</a></li>
+            <li><a href="#" class="header__dropdown-link">Mis ventas</a></li>
+            <li><a href="#" class="header__dropdown-link">Mi tienda</a></li>
+          </ul>
+        </div>
+        <div class="header__item">
+          <a href="#" class="header__link">Contacto</a>
+        </div>
+      </nav>
+
+      <div class="header__actions">
+        <form class="header__search" onsubmit="return false">
+          <input type="text" class="header__search-input" placeholder="Buscar...">
+          <button type="submit" class="header__search-button">Ir</button>
+        </form>
+        <button class="header__action" type="button">Ingresar</button>
+        <button class="header__action" type="button">
+          Carrito
+          <span class="header__badge">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <script src="script.js"></script>
+</body>
+</html>
