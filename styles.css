@@ -3,11 +3,15 @@
   --surface: #ffffff;
   --soft: #f3f5fa;
   --text: #2b2f3a;
+  --muted: #667085;
   --border: #e3e6ee;
   --red: #d9262c;
   --red-dark: #b01c21;
   --blue: #1c2a5c;
   --blue-text: #1c2a5c;
+  --hero-from: #1c2a5c;
+  --hero-to: #2c4290;
+  --footer-bg: #1c2a5c;
   --shadow: rgba(28, 42, 92, 0.15);
 }
 
@@ -16,11 +20,15 @@
   --surface: #1a1e2a;
   --soft: #141722;
   --text: #e8e8ee;
+  --muted: #a0a4b3;
   --border: #2c3142;
   --red: #ef4a50;
   --red-dark: #d9262c;
   --blue: #0b1330;
   --blue-text: #9fb0ff;
+  --hero-from: #0b1330;
+  --hero-to: #17265a;
+  --footer-bg: #090b11;
   --shadow: rgba(0, 0, 0, 0.6);
 }
 
@@ -28,6 +36,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 130px;
 }
 
 body {
@@ -44,6 +57,88 @@ a {
 
 ul {
   list-style: none;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.section__header {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.section__title {
+  color: var(--blue-text);
+  font-size: 32px;
+}
+
+.section__title::after {
+  display: block;
+  width: 60px;
+  height: 4px;
+  margin: 12px auto 0;
+  border-radius: 2px;
+  background-color: var(--red);
+  content: "";
+}
+
+.section__subtitle {
+  margin-top: 14px;
+  color: var(--muted);
+}
+
+.button {
+  display: inline-block;
+  padding: 13px 28px;
+  border: 2px solid transparent;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+}
+
+.button--primary {
+  background-color: var(--red);
+  color: #ffffff;
+}
+
+.button--primary:hover {
+  background-color: var(--red-dark);
+}
+
+.button--outline {
+  border-color: #ffffff;
+  background-color: transparent;
+  color: #ffffff;
+}
+
+.button--outline:hover {
+  background-color: #ffffff;
+  color: #1c2a5c;
+}
+
+.button--white {
+  background-color: #ffffff;
+  color: #d9262c;
+}
+
+.button--white:hover {
+  background-color: #f1f1f1;
 }
 
 .header {
@@ -311,6 +406,14 @@ ul {
 }
 
 @media (max-width: 700px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  .section__title {
+    font-size: 26px;
+  }
+
   .header__top {
     flex-direction: column;
     gap: 6px;

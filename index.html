@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Emporio | Ferretería</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="main.css">
 </head>
 <body>
   <header class="header">
@@ -15,7 +16,7 @@
       </ul>
       <div class="header__tools">
         <button class="header__theme" type="button" id="themeToggle">Modo oscuro</button>
-        <a href="#" class="header__store">TIENDA EN LÍNEA</a>
+        <a href="#cotizar" class="header__store">TIENDA EN LÍNEA</a>
       </div>
     </div>
 
@@ -38,7 +39,7 @@
           </ul>
         </div>
         <div class="header__item">
-          <a href="#" class="header__link">Productos</a>
+          <a href="#categorias" class="header__link">Productos</a>
           <ul class="header__dropdown">
             <li><a href="#" class="header__dropdown-link">Agua fría</a></li>
             <li><a href="#" class="header__dropdown-link">Agua caliente</a></li>
@@ -64,7 +65,7 @@
           </ul>
         </div>
         <div class="header__item">
-          <a href="#" class="header__link">Contacto</a>
+          <a href="#contacto" class="header__link">Contacto</a>
         </div>
       </nav>
 
@@ -81,6 +82,205 @@
       </div>
     </div>
   </header>
+
+  <main class="main">
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <span class="hero__tag">Ferretería y sanitarios</span>
+          <h1 class="hero__title">Todo para tus obras en <span class="hero__title-accent">un solo lugar</span></h1>
+          <p class="hero__text">Tuberías, conexiones y accesorios para agua fría, agua caliente, desagüe e instalaciones eléctricas. Calidad que dura y entrega rápida.</p>
+          <div class="hero__buttons">
+            <a href="#categorias" class="button button--primary">Ver productos</a>
+            <a href="#cotizar" class="button button--outline">Pedir cotización</a>
+          </div>
+        </div>
+        <div class="hero__media">
+          <svg class="hero__image" viewBox="0 0 520 400" role="img" aria-label="Tuberías y conexiones de ferretería" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="260" cy="200" r="185" fill="#ffffff" fill-opacity="0.07"/>
+            <circle cx="260" cy="200" r="130" fill="#ffffff" fill-opacity="0.08"/>
+            <rect x="60" y="90" width="260" height="56" rx="10" fill="#d9262c"/>
+            <rect x="48" y="80" width="22" height="76" rx="6" fill="#a81b20"/>
+            <rect x="310" y="80" width="22" height="76" rx="6" fill="#a81b20"/>
+            <rect x="90" y="100" width="200" height="9" rx="4" fill="#ffffff" fill-opacity="0.28"/>
+            <rect x="170" y="58" width="14" height="34" fill="#3a3f52"/>
+            <circle cx="177" cy="50" r="20" fill="#f7941d"/>
+            <path d="M332 118 H392 Q432 118 432 158 V250" fill="none" stroke="#e8edf7" stroke-width="56"/>
+            <rect x="404" y="240" width="56" height="22" rx="6" fill="#b8c2dc"/>
+            <rect x="104" y="262" width="260" height="56" rx="10" fill="#2f6fd1"/>
+            <rect x="92" y="252" width="22" height="76" rx="6" fill="#1c4fa0"/>
+            <rect x="354" y="252" width="22" height="76" rx="6" fill="#1c4fa0"/>
+            <rect x="206" y="196" width="56" height="76" rx="10" fill="#2f6fd1"/>
+            <rect x="196" y="186" width="76" height="22" rx="6" fill="#1c4fa0"/>
+            <rect x="132" y="272" width="200" height="9" rx="4" fill="#ffffff" fill-opacity="0.28"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section class="categories" id="categorias">
+      <div class="container">
+        <div class="section__header">
+          <h2 class="section__title">Nuestras categorías</h2>
+          <p class="section__subtitle">Encuentra lo que necesitas para cada instalación</p>
+        </div>
+        <div class="categories__grid">
+          <article class="card">
+            <svg class="card__image" viewBox="0 0 200 160" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Tubería de agua fría" xmlns="http://www.w3.org/2000/svg">
+              <rect width="200" height="160" fill="#e8f0fc"/>
+              <path d="M42 130 V78 Q42 52 68 52 H160" fill="none" stroke="#2f6fd1" stroke-width="30"/>
+              <rect x="27" y="122" width="30" height="12" rx="3" fill="#1c2a5c"/>
+              <rect x="152" y="37" width="12" height="30" rx="3" fill="#1c2a5c"/>
+            </svg>
+            <div class="card__body">
+              <h3 class="card__title">Agua fría</h3>
+              <p class="card__text">Tuberías y conexiones para redes de agua potable.</p>
+              <a href="#" class="card__link">Ver productos</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <svg class="card__image" viewBox="0 0 200 160" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Tubería de agua caliente" xmlns="http://www.w3.org/2000/svg">
+              <rect width="200" height="160" fill="#fdf3e4"/>
+              <path d="M26 116 H78 Q100 116 100 94 Q100 62 132 62 H176" fill="none" stroke="#e0b97a" stroke-width="28"/>
+              <rect x="20" y="102" width="12" height="28" rx="3" fill="#b8924f"/>
+              <rect x="168" y="48" width="12" height="28" rx="3" fill="#b8924f"/>
+            </svg>
+            <div class="card__body">
+              <h3 class="card__title">Agua caliente</h3>
+              <p class="card__text">Resistentes al calor para duchas y termotanques.</p>
+              <a href="#" class="card__link">Ver productos</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <svg class="card__image" viewBox="0 0 200 160" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Conexión de desagüe" xmlns="http://www.w3.org/2000/svg">
+              <rect width="200" height="160" fill="#e6f6ed"/>
+              <rect x="30" y="76" width="140" height="32" rx="4" fill="#3cb878"/>
+              <rect x="84" y="34" width="32" height="50" rx="4" fill="#3cb878"/>
+              <rect x="24" y="70" width="12" height="44" rx="3" fill="#2a8a58"/>
+              <rect x="164" y="70" width="12" height="44" rx="3" fill="#2a8a58"/>
+              <rect x="78" y="28" width="44" height="12" rx="3" fill="#2a8a58"/>
+            </svg>
+            <div class="card__body">
+              <h3 class="card__title">Desagüe</h3>
+              <p class="card__text">Tubos, codos y tees para sistemas sanitarios.</p>
+              <a href="#" class="card__link">Ver productos</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <svg class="card__image" viewBox="0 0 200 160" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Grifo y accesorios" xmlns="http://www.w3.org/2000/svg">
+              <rect width="200" height="160" fill="#eef0f4"/>
+              <rect x="68" y="116" width="64" height="20" rx="4" fill="#9aa3b2"/>
+              <rect x="92" y="62" width="16" height="56" fill="#b4bbc8"/>
+              <path d="M100 68 H142 V98" fill="none" stroke="#b4bbc8" stroke-width="14"/>
+              <rect x="82" y="40" width="36" height="10" rx="4" fill="#2f6fd1"/>
+              <rect x="95" y="48" width="10" height="16" fill="#2f6fd1"/>
+            </svg>
+            <div class="card__body">
+              <h3 class="card__title">Accesorios</h3>
+              <p class="card__text">Grifos, llaves y complementos para tu baño y cocina.</p>
+              <a href="#" class="card__link">Ver productos</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <svg class="card__image" viewBox="0 0 200 160" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Caja eléctrica" xmlns="http://www.w3.org/2000/svg">
+              <rect width="200" height="160" fill="#fff6dc"/>
+              <rect x="50" y="32" width="100" height="96" rx="10" fill="#f7c21d"/>
+              <rect x="65" y="47" width="70" height="66" rx="6" fill="#fde58a"/>
+              <circle cx="76" cy="58" r="5" fill="#c98d0a"/>
+              <circle cx="124" cy="58" r="5" fill="#c98d0a"/>
+              <circle cx="76" cy="102" r="5" fill="#c98d0a"/>
+              <circle cx="124" cy="102" r="5" fill="#c98d0a"/>
+            </svg>
+            <div class="card__body">
+              <h3 class="card__title">Eléctrica</h3>
+              <p class="card__text">Cajas, canaletas y accesorios para instalaciones.</p>
+              <a href="#" class="card__link">Ver productos</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="container features__grid">
+        <div class="features__item">
+          <strong class="features__number">+500</strong>
+          <span class="features__label">Productos disponibles</span>
+        </div>
+        <div class="features__item">
+          <strong class="features__number">24 h</strong>
+          <span class="features__label">Despacho en la ciudad</span>
+        </div>
+        <div class="features__item">
+          <strong class="features__number">100%</strong>
+          <span class="features__label">Garantía de calidad</span>
+        </div>
+        <div class="features__item">
+          <strong class="features__number">7 días</strong>
+          <span class="features__label">Atención a la semana</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" id="cotizar">
+      <div class="container">
+        <div class="cta__box">
+          <div class="cta__content">
+            <h2 class="cta__title">¿Necesitas una cotización para tu obra?</h2>
+            <p class="cta__text">Cuéntanos qué materiales necesitas y te respondemos el mismo día.</p>
+          </div>
+          <div class="cta__buttons">
+            <a href="#" class="button button--white">Solicitar cotización</a>
+            <a href="#" class="button button--outline">Escribir por WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contacto">
+    <div class="container footer__grid">
+      <div class="footer__column">
+        <h3 class="footer__brand">Emporio</h3>
+        <p class="footer__text">Compra y venta de artículos de ferretería: tuberías, conexiones y accesorios para tu hogar y tu obra.</p>
+      </div>
+      <div class="footer__column">
+        <h4 class="footer__title">Productos</h4>
+        <ul class="footer__list">
+          <li><a href="#" class="footer__link">Agua fría</a></li>
+          <li><a href="#" class="footer__link">Agua caliente</a></li>
+          <li><a href="#" class="footer__link">Desagüe</a></li>
+          <li><a href="#" class="footer__link">Accesorios</a></li>
+          <li><a href="#" class="footer__link">Eléctrica</a></li>
+        </ul>
+      </div>
+      <div class="footer__column">
+        <h4 class="footer__title">Empresa</h4>
+        <ul class="footer__list">
+          <li><a href="#" class="footer__link">Nosotros</a></li>
+          <li><a href="#" class="footer__link">Catálogos</a></li>
+          <li><a href="#" class="footer__link">Vender</a></li>
+          <li><a href="#" class="footer__link">Trabaja con nosotros</a></li>
+        </ul>
+      </div>
+      <div class="footer__column">
+        <h4 class="footer__title">Contacto</h4>
+        <ul class="footer__list">
+          <li class="footer__text">La Paz, Bolivia</li>
+          <li class="footer__text">+591 7000 0000</li>
+          <li class="footer__text">ventas@emporio.com</li>
+          <li class="footer__text">Lunes a viernes 8:30 a 17:00</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__copy">© 2026 Emporio. Todos los derechos reservados.</p>
+    </div>
+  </footer>
 
   <script src="script.js"></script>
 </body>
